@@ -2,8 +2,8 @@
 //Q1 Write a program in C to display the first 10 natural numbers.
 void main()
 {
-    int a;
-    for (a=1; a<=10; a++)
+   
+    for (int a; a=1; a<=10; a++)
     {
         printf("%d ", a)
     }
@@ -15,11 +15,11 @@ void main()
 
 void main()
 {
-    int b, total = 0;
+    total = 0;
     
-    for(b = 1; b <=10; b++)
+    for(int b; b = 1; b <=10; b++)
     {
-        total = total + a;
+        total = total + b;
     }
     printf(total);
 }
@@ -29,9 +29,9 @@ void main()
 
 void main()
 {
-    int a,b, total = 0;
+    total = 0;
 
-    for(a=1; a<=b; a++);
+    for(int a,b; a=1; a<=b; a++);
     {
         total+=a;
     }
@@ -43,10 +43,10 @@ void main()
 
 void main()
 {
-    int a,b,total = 0;
+    total = 0;
     float average;
     printf("enter 10 numbers: \n");
-    for(a=1;a<=10; a++)
+    for(int a, b; a=1;a<=10; a++)
     {
             printf("number %d: ",a);
         scanf("%d",&b);
@@ -61,10 +61,8 @@ void main()
 
 void main()
 {
-    int a, cube;
-    printf("enter numbers: ");
-    scanf("%d", &cube);
-    for(a=1; a<=cube; a++)
+    
+    for(int a, cube; a=1; a<=cube; a++)
     {
         printf("number : %d cubed number of %d is :%d \n",a,a,(a*a*a));
     }
@@ -74,9 +72,8 @@ void main()
 
 void main()
 {
-    int a;
-    int b = 15;
-    for(a=1; a<=10; a++)
+
+    for(int a; int b = 15; a=1; a<=10; a++)
     {
         printf(a,b,a*b);
     }
@@ -86,9 +83,9 @@ void main()
 
 void main()
 {
-    int a,b,rows;
+    
 
-    for(a=1; a<=rows; a++)
+    for(int a,b,rows; a=1; a<=rows; a++)
     {
         for(b=1; b<=a; b++)
             printf("*");
@@ -100,9 +97,9 @@ void main()
 
 void main()
 {
-    int a,b,rows;
+    
 
-    for(a=1; a<=rows; a++)
+    for(int a,b,rows; a=1; a<=rows; a++)
     {
         for(b=1; b<=a; b++)
             printf(b);
